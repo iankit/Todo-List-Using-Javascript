@@ -3,14 +3,18 @@
 
   <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <title>Todo List App Using Javascript</title>
   </head>
 
   <body>
-    <h1>Todo List</h1>
+  <div class="wrapper">
+    <h1>Todos</h1>
     <!-- <button onclick="handlers.displayTodo()">Display Todos</button> -->
     <button onclick="handlers.toggleAll()">Toggle All</button>
     <div>
-      <input type="text" id="addTodoText" placeholder="Add Todo List">
+      <input type="text" id="addTodoText" onkeypress="if (event.keyCode==13){handlers.addTodo()}"placeholder="Add Todo List">
       <button onclick="handlers.addTodo()">Add Todos</button>
     </div>
     <div>
@@ -29,6 +33,7 @@
     <ul>
       
     </ul>
+  </div>
     <script src="script.js"></script>
   </body>
 

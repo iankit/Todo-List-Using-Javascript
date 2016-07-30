@@ -1,7 +1,11 @@
-/* Styles go here */
+body{
+	font-family: 'Lato', sans-serif;
+}
 h1{
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 200;
+  text-transform: lowercase;
+  text-align: center;
 }
 div{
   margin-top: 20px;
@@ -14,6 +18,14 @@ button{
   box-shadow: 2px 2px 5px;
 }
 input{
-  height: 18px;
+  height: 25px;
+  padding: 6px;
+}
+.wrapper{
+	width: 600px;
+	margin: 0 auto;
+}
+.todolistBody{
+	border: 1px solid rgba(0,0,0,0.4);
 }
 
