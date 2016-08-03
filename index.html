@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <title>Todo List App Using Javascript</title>
+    <title>Practical Todos</title>
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon">
   </head>
-
   <body>
-  <div class="wrapper">
-    <h1>Todos</h1>
-    <!-- <button onclick="handlers.displayTodo()">Display Todos</button> -->
-    <button onclick="handlers.toggleAll()">Toggle All</button>
-    <div>
-      <input type="text" id="addTodoText" onkeypress="if (event.keyCode==13){handlers.addTodo()}"placeholder="Add Todo List">
-      <button onclick="handlers.addTodo()">Add Todos</button>
-    </div>
-    <div>
-      <input type="number" id="todoListPosition" placeholder="Position">
-      <input type="text" id="newTodoText" placeholder="New ToDo Text">
-      <button onclick="handlers.changeTodo()">Change ToDo Text</button>
-    </div>
-    <div>
-      <input type="number" id="deleteTodoPosition" placeholder="Enter Position">
-      <button onclick="handlers.deleteTodo()">Delete</button>
-    </div>
-     <div>
-      <input type="number" id="toggleCompleted" placeholder="Toggle Todo">
-      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
-    </div>
-    <ul>
-      
-    </ul>
-  </div>
-    <script src="script.js"></script>
-  </body>
+    <h1>Todo List</h1>
 
+    <div>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+    
+    <div>
+      <button onclick="handlers.addTodo()">Add</button>
+      <input id="addTodoTextInput" type="text">
+    </div>
+    
+    <div>
+      <button onclick="handlers.changeTodo()">Change Todo</button>
+      <input id="changeTodoPositionInput" type="number">
+      <input id="changeTodoTextInput" type="text">
+    </div>
+  
+    <div>
+      <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
+      <input id="toggleCompletedPositionInput" type="number">
+    </div>
+    
+    <ul>
+    </ul>
+    <script src="/client.js"></script>
+  </body>
 </html>
